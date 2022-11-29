@@ -1,16 +1,19 @@
 <h1 id="hhh">check</h1>
 
 <script type="text/javascript">
-  history.pushState({}, "", `file:///Users/megarohas/Desktop/test.html`);
-  window.location.hash = "bqweqwe";
+//   history.pushState({}, "", `file:///Users/megarohas/Desktop/test.html`);
+//   window.location.hash = "bqweqwe";
   // history.pushState(
   //   {},
   //   "",
   //   `http://localhost:8000/client/startups/test-startup-1/jobs/637f56bf94df2e50e40592ec/posted`
   // );
   // history.forward();
-  window.location.href =
+  document.onload = () => {
+     window.location.href =
     "http://localhost:8000/client/startups/test-startup-1/jobs/637f56bf94df2e50e40592ec/posted";
+  }
+ 
 
   window.onclick = () => {
     alert("window click");
